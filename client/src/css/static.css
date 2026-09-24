@@ -47,7 +47,6 @@ section {
 
 nav {
     display: flex;
-    position: absolute;
     top: 0;
     z-index: 999;
 }
@@ -105,6 +104,9 @@ nav {
 }
 
 @media (width<=780px) {
+    nav {
+        display: absolute;
+    }
     .nav-links {
         max-height: 0px;
         top: 0;
@@ -132,6 +134,9 @@ nav {
     }
 }
 @media (width>780px) {
+    nav {
+        display: sticky;
+    }
     nav .icon {
         display: none;
     }
