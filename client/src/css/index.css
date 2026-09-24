@@ -1,11 +1,60 @@
-@charset 'utf-8';
+@import url('../css/defaults.css');
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     text-align: left;
-    margin: 10px;
+    margin: 10px auto;
 }
 
 h6 {
     font-weight: normal;
     font-style: italic;
+}
+
+.hero-section {
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 40px 10%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: linear-gradient(to left, #1e528820, #1e5288a0, #1e5288f0), url('../img/SixFlags1.jpg');
+}
+.content {
+    padding: 40px 10%;
+}
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+    background-color: var(--az-red);
+    color: white;
+    transition: 0.2s ease;
+    box-shadow: 0 0 5px 1px gray;
+}
+button:hover {
+    box-shadow: 0 0 5px 1px white;
+    background-color: var(--bougainvillea);
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }

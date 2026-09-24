@@ -1,15 +1,15 @@
 @import url(./defaults.css);
 
 :root {
-    --nav-bg-0: #d9e0f7;
-    --nav-bg-1: #bdc6e4;
-    --nav-text-0: #350c11;
-    --nav-text-1: #8a0c1b;
-    --nav-text-2: #c73e4e;
-    --hover-bg: #ffffff90;
-    --hover-bg-2: #ffffff20;
-    --footer: #222222;
-    --footer-text: #ededed;
+    --nav-bg-0: var(--az-blue);
+    --nav-bg-1: var(--azurite);
+    --nav-text-0: var(--cloud);
+    --nav-text-1: #ffffff;
+    --nav-text-2: var(--caliche);
+    --hover-bg: var(--arroyo-blue);
+    --hover-bg-2: var(--azurite);
+    --footer: var(--az-blue);
+    --footer-text: #d0d0d0;
 }
 
 /* page spacing */
@@ -32,8 +32,6 @@ article {
     box-sizing: border-box;
     text-align: center;
     justify-content: center;
-    margin: auto;
-    max-width: 80%;
 }
 
 section {
@@ -50,11 +48,15 @@ nav {
     top: 0;
     z-index: 999;
 }
-
+nav img{
+    min-height: 15px;
+    flex-shrink: 1;
+    max-height: 40px;
+}
 .nav-link {
     text-decoration: none;
     transition: 0.5s ease;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     color: var(--nav-text-0);
 }
@@ -105,9 +107,11 @@ nav {
 
 @media (width<=780px) {
     nav {
-        display: absolute;
+        position: absolute;
     }
     .nav-links {
+        display: absolute;
+        z-index: 1000;
         max-height: 0px;
         top: 0;
         flex-direction: column;
@@ -122,7 +126,8 @@ nav {
         border-top-right-radius: 0;
         background-color: var(--nav-bg-0);
         text-align: center;
-        color: var(--nav-text);
+        color: var(--nav-text-0);
+        font-weight: bold;
         z-index: 999;
     }
     nav:hover .nav-links {
@@ -135,7 +140,7 @@ nav {
 }
 @media (width>780px) {
     nav {
-        display: sticky;
+        position: sticky;
     }
     nav .icon {
         display: none;
@@ -148,15 +153,31 @@ nav {
         min-width: 100%;
         width: max-content;
     }
+    .nav-links {
+        align-items: center;
+    }
 }
+
+/* footer styling */
 
 footer {
     background-color: var(--footer);
     color: var(--footer-text);
-    padding: 50px;
+    padding: 20px 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     margin-top: 50px;
+    font-size: 0.8em;
+}
+footer img {
+    min-width: 40px;
+    flex-shrink: 1;
+    max-height: 60px;
+}
+footer hr {
+    margin: 0 20px;
 }
 
 /* branding */

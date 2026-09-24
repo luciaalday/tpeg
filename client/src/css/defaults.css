@@ -2,15 +2,17 @@
 
 :root {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    --primary-1: #222222;
-    --primary-1-light: #555555;
-    --primary-1-dark: #111111;
-    --primary-2: #222222;
-    --primary-2-light: #555555;
-    --primary-2-dark: #111111;
-    --accent-1: #246783;
-    --accent-2: #231449;
-    --accent-3: #903412;
-    --neutral-1: #f7e4cc;
-    --neutral-2: #dff3e3;
+    --az-blue: #0c234b;
+    --az-red: #ab0520;
+    --tinta: #03132e;
+    --azurite: #1e5288;
+    --arroyo-blue: #106ab1;
+    --rain: #81ceeb;
+    --sonoran-red: #850000;
+    --bougainvillea: #c62840;
+    --saguaro: #7f8b5a;
+    --shade: #3f7a7a;
+    --brick: #85372b;
+    --cloud: #e5eff7;
+    --caliche: #f2efea;
 }
