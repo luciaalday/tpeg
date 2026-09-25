@@ -195,10 +195,10 @@ footer hr {
         1px 1px 3px black;
     box-shadow: 0 0 5px 1px #0004;
     border: 1px solid #fff8;
-    height: 120px;
-    width: 120px;
-    max-height: 120px;
-    max-width: 120px;
+    height: 140px;
+    width: 140px;
+    max-height: 140px;
+    max-width: 140px;
 }
 .color-swatch h4 {
     margin: 0;
