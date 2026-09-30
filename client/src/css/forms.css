@@ -1,0 +1,34 @@
+@import url('./defaults.css');
+
+form {
+    background-color: var(--cloud);
+    padding: 10%;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+}
+@media screen and (width>780px) {
+    form {
+        flex-direction: row;
+        justify-content: stretch;
+    }
+}
+@media screen and (width<=780px) {
+    form {
+        flex-direction: column;
+    }
+}
+
+label {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+input, textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}

@@ -5,6 +5,7 @@ import Footer from './static/Footer';
 import Home from './pages/Home';
 import Nav from './static/Nav';
 import Stylesheet from './pages/Stylesheet';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/style' element={<Stylesheet />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Error code={404} />} />
       </Routes>
       <Footer />

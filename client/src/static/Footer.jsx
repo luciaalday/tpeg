@@ -11,9 +11,9 @@ export default function Footer() {
                 <p>Lucia Alday &copy; 2026</p>
                 <hr></hr>
                 <div className='column'>
-                    <Link className='footer-link'>Home</Link>
-                    <Link className='footer-link'>Stylesheet</Link>
-                    <Link className='footer-link'>Home</Link>
+                    <Link className='footer-link' to='/'>Home</Link>
+                    <Link className='footer-link' to='/style'>Stylesheet</Link>
+                    <Link className='footer-link' to='/contact'>Contact</Link>
                 </div>
             </div>
             <img src={uaLogo} alt='University of Arizona Logo' />
